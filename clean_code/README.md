@@ -19,3 +19,27 @@
 * Throw Exceptions instead of returning error codes.
 * Error Handling is one thing. Functions that handle errors should only do that. They should start with try and end with catch or finally. 
 * Functions should be small 3-5(good) - 10-15(max) lines.
+
+## Comments
+
+* Logs in comments are clutter, use a source code control system.
+* Avoid redundant comments. 
+* Comments doesn't make up for bad code.
+* Only use documentation comments if it is in a public API.
+* Avoid closing braces comments. Make functions shorter instead.
+* Don't comment code. Delete them completely or keep them.
+* Don't add markup to comments. Ex: HTML, RST
+* Avoid too much information. Ex: History of an algorithm
+* Avoid function headers. You don't need a comment if function name already makes sense.
+* Don't mark sections of file with banner comments.
+
+## Formatting 
+
+* Use an automated tool for formatting.
+* Whole team should agree to a certain formatting practice.
+* Put high-level code first in a file. And it should be followed by low level code. Caller should be above the callee.
+* Vertical Openness. &#x2192; Separate each concepts.
+* Vertical Density. &#x2192; Keep related things closer.
+* Vertical Distance. &#x2192; Variables should be declared closer to their usage. Instance variables should be in either top of the class (Java) or the bottom of the class (C++).
+
+
