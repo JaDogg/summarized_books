@@ -13,7 +13,7 @@
 * Don’t have side effects for functions. 
     * `checkPassword()` function should not initialize the session. 
 * Avoid output arguments, Pass by reference for the purpose of modification is bad. 
-    * `appendFooter(StringBuffer report)?report.appendFooter()`
+    * `appendFooter(StringBuffer report)` &#x2192; `report.appendFooter()`
 * Command query separation. A function can be a command or query but not both.
     * `setAttribute()` should not return an `attribute_exists==True`. 
 * Throw Exceptions instead of returning error codes.
