@@ -5,11 +5,12 @@
 * Use intention revealing names. 
 * Long names are better than names that don't make sense or acronyms.
 * A Comment must not be necessary to understand what a variable does.
-* Avoid mental mapping. &#x2192; l, m, n, k, j, z, p
+* Avoid mental mapping. &#x2192; `l, m, n, k, j, z, p`
+* Avoid using `l`(Simple L), `O`(Capital O) as names.
 * Don’t encode additional details in names. &#x2192; Hungarian Notation is bad.
 * Make meaningful distinctions. &#x2192; Don't misspell to make two names distinct. class vs. klass.
-* Number series naming is wrong. &#x2192; Avoid names such as a1, a2, a3, a4. (variadic or meaningful names should be used)
-* Use searchable names. &#x2192; MAX_CLASSES_PER_STUDENT instead of 7.
+* Number series naming is wrong. &#x2192; Avoid names such as `a1, a2, a3, a4`. (variadic or meaningful names should be used)
+* Use searchable names. &#x2192; `MAX_CLASSES_PER_STUDENT` instead of `7`.
 
 ## Functions
 
