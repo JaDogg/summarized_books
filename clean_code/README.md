@@ -62,4 +62,16 @@
 * An Object exposes behaviour and hides data.
 * A data structure exposes data and has no behaviour.
 
+## Error Handling
+
+* Error handling should not obscure logic. &#x2192; High level functions can handle errors thrown by low level functions.
+* Raise exceptions instead of returning error codes.
+* Do not use checked exceptions. (Checked exceptions violate open/closed principle.)
+* Provide context with exceptions.
+* Write tests that forces exceptions.
+* Special Case Pattern. &#x2192; Encapsulate special cases of business logic in a class. 
+* Don't return null. &#x2192; Return a special case object or throw an exception.
+* Don't pass null. &#x2192; If you need to pass null to something it is a problem.
+* Write try-catch-finally statement first. &#x2192; If you are using TDD write a test that expects exceptions first.
+
 
