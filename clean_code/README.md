@@ -2,6 +2,15 @@
 
 ## Meaningful Names
 
+* Use intention revealing names. 
+* Long names are better than names that don't make sense or acronyms.
+* A Comment must not be necessary to understand what a variable does.
+* Avoid mental mapping. &#x2192; l, m, n, k, j, z, p
+* Don’t encode additional details in names. &#x2192; Hungarian Notation is bad.
+* Make meaningful distinctions. &#x2192; Don't misspell to make two names distinct. class vs. klass.
+* Number series naming is wrong. &#x2192; Avoid names such as a1, a2, a3, a4. (variadic or meaningful names should be used)
+* Use searchable names. &#x2192; MAX_CLASSES_PER_STUDENT instead of 7.
+
 ## Functions
 
 * A function should be able to read as a TO paragraph. And a set of functions should be read as set of TO paragraphs. (Readable from top to bottom)
@@ -41,5 +50,15 @@
 * Vertical Openness. &#x2192; Separate each concepts.
 * Vertical Density. &#x2192; Keep related things closer.
 * Vertical Distance. &#x2192; Variables should be declared closer to their usage. Instance variables should be in either top of the class (Java) or the bottom of the class (C++).
+
+
+##  Objects and Data Structures
+
+* Law of Demeter. &#x2192; Avoid method chaining to access unknown data. A function will know too much. Don't talk to strangers.
+* Procedural code makes it harder to add new data structures because all the functions should change. However you can add new functions easily without changing the data structures.
+* OO code makes it harder to add new functions because all the classes must change. Easier to add new classes without changing functions.
+* Feature Envy. &#x2192; Don't create data structure + object hybrids. Example: Data transfer objects + Business Rule methods.
+* An Object exposes behaviour and hides data.
+* A data structure exposes data and has no behaviour.
 
 
