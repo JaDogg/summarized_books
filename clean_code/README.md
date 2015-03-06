@@ -74,4 +74,34 @@
 * Don't pass null. &#x2192; If you need to pass null to something it is a problem.
 * Write try-catch-finally statement first. &#x2192; If you are using TDD write a test that expects exceptions first.
 
+## Boundaries 
+
+* When using third party code instead of depending on their implementations directly, depend on wrapper classes with limited features.
+* Learn boundaries through *learning tests*.
+* Learning tests can be used to verify newer releases.
+* Adapter pattern is useful when dealing with things that doesn't exist.
+    * Create an interface, use it. When the API is completed create an *Adapter*.
+    * When the API changes only the adapter needs to change. 
+
+## Unit Tests
+
+* Unit Tests should be written with same care as the production code.
+    * Easier to change when the production code is refactored or changed.
+    * However tests don't need to be as efficient as production code. (Memory efficient, Size efficient...)
+* Three Laws of TDD
+    * You may not write production code until you have written a failing unit test.
+    * You may not write more of unit test than is sufficient to fail, and not compiling is failing.
+    * You may not write more of production code that is sufficient to pass current failing test.
+* Test a single concept in a single test.
+* Test function should have `BUILD-OPERATE-CHECK` sections.
+* Create a domain specific testing language based on the assertions you need to make. Example: `assertHtmlEquals()`, `assertResponseIsXml()`
+    * Possible to use `GIVEN-WHEN-THEN` approach for naming.
+* Use *Template* Pattern to avoid duplication.
+* F.I.R.S.T.
+    * F &#x2192; Fast. &#x2192; Fast unit tests can be executed often. Find problems early.
+    * I &#x2192; Independent. &#x2192; Test should not depend on each other.
+    * R &#x2192; Repeatable. &#x2192; Tests should be repeatable in any environment.
+    * S &#x2192; Self-Validating. &#x2192; You should be able to easily identify which tests passed and which failed.
+    * T &#x2192; Timely. &#x2192; Tests should be written in a timely manner. Unit tests should be written just before the production code that makes them fast. 
+
 
