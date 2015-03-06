@@ -98,10 +98,10 @@
     * Possible to use `GIVEN-WHEN-THEN` approach for naming.
 * Use *Template* Pattern to avoid duplication.
 * F.I.R.S.T.
-    * F &#x2192; Fast. &#x2192; Fast unit tests can be executed often. Find problems early.
-    * I &#x2192; Independent. &#x2192; Test should not depend on each other.
-    * R &#x2192; Repeatable. &#x2192; Tests should be repeatable in any environment.
-    * S &#x2192; Self-Validating. &#x2192; You should be able to easily identify which tests passed and which failed.
-    * T &#x2192; Timely. &#x2192; Tests should be written in a timely manner. Unit tests should be written just before the production code that makes them fast. 
+    * **F**ast. &#x2192; Fast unit tests can be executed often. Find problems early.
+    * **I**ndependent. &#x2192; Test should not depend on each other.
+    * **R**epeatable. &#x2192; Tests should be repeatable in any environment.
+    * **S**elf-Validating. &#x2192; You should be able to easily identify which tests passed and which failed.
+    * **T**imely. &#x2192; Tests should be written in a timely manner. Unit tests should be written just before the production code that makes them fast. 
 
 
