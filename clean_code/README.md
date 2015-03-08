@@ -104,4 +104,72 @@
     * **S**elf-Validating. &#x2192; You should be able to easily identify which tests passed and which failed.
     * **T**imely. &#x2192; Tests should be written in a timely manner. Unit tests should be written just before the production code that makes them fast. 
 
+## Classes
+
+* Organization. &#x2192; (Java) Public Static, Private Static, Private
+* Step-down rule. &#x2192; (Set of TO paragraphs) for public and their required private functions.
+* Encapsulate utility functions inside the classes. 
+    * Can make them protected so they are exposed to tests.
+    * Loosening encapsulation should always be a last resort.
+    * Tests rule.
+* Classes should be small.
+    * Count responsibilities. Reasons to change.
+    * Class name is given to show its responsibility.
+    * The Single Responsibility Principle.
+        * Exactly one responsibility and one reason to change.
+* Class names with `Processor`, `Manager`, `Super` often hints unfortunate aggregation of responsibilities.
+    * A class's responsibility should be explainable in 25 words without using *if*, *and*, *or*, *but*.
+* System with many small classes has no more moving parts than a system with very few large classes.
+* High Cohesion.
+    * Classes should have small number of instance variables.
+    * Each method of class should manipulate one or more of the variables. 
+    * Methods and instance variables are co-dependent as a whole.
+    * When cohesion is low break the class apart. 
+* Depend on abstractions and not concrete details. 
+
+## Systems
+
+* Separate **constructing** a system from **using** it.
+    * Software systems should separate the startup process, when the application objects are constructed and the dependencies are "wired" together; from runtime logic that takes over after startup.
+    * Don't mix startup code and runtime logic.
+* Separation of Main
+    * Move all aspects of construction to `main` or modules called by `main`.
+* Factories
+    * Abstract Factory Pattern allows handling when certain objects are created. In that case main can create an object of Abstract Factory implementation and pass it.
+* Dependency Injection
+    * Classes provide setter methods or constructor arguments to get dependencies.
+* Test Drive the system architecture.
+    * Start a software project with a naively simple but nicely decoupled architecture. 
+    * Expect changes.
+    * An optimal system architecture consists of modularized domains of concern, each of which is implemented with POJOs. The different domains are integrated together with minimally invasive Aspects or Aspect-like tools. This architecture can be test driven just like the code.
+* Optimize decision making
+* Use standards wisely, when they add demonstrable value.
+* Systems need Domain Specific Languages.
+    * Can be a small scripting language or an API in standard language.
+    * A good DSL minimizes the communication gap between a domain concept and the code that implements it.
+* Use the simplest thing that can possibly work.
+
+## Emergence
+
+* Kent Beck's four rules of simple design. (Given in order of importance)
+    * Run all the tests.
+        * System is comprehensively tested.
+        * Pass all the tests all the time.
+        * More tests we write more testable the system becomes. (Follow SRP and DIP)
+        * Testable systems mostly have better designs.
+    * Contains no duplication.
+        * After tests are available cleaning up can happen. Since we can ensure that the system works after cleaning up because of tests.
+        * Use TEMPALTE METHOD pattern.
+    * Expresses the intent of the programmer.
+        * Choose better names. One cannot be surprised when one hear a class or function name and then hear its responsibilities.
+        * Small classes and small functions are easier to name.
+        * When you are using standard design patterns, use their names.
+        * Well written unit tests.
+    * Minimizes the number of classes and methods.
+        * Make classes and methods count lower but not to the level it becomes a dogma.
+        * Be pragmatic.
+        * This has the lowest priority of the four. 
+
+## Concurrency 
+
 
