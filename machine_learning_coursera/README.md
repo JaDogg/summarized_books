@@ -48,4 +48,17 @@
             * Give it to Cocktail party algorithm.
             * Seperate the audios.
 
+## Linear Regression with One Variable
+
+* House Price -> Regression Problem
+* Notation:
+    * `m` -> Number of training examples
+    * `x`'s -> **Input** variable/**Features**
+    * `y`'s -> **Output** variable/**Target** variable
+    * `(x,y)` -> One training example
+    * `(x^(i), x^(i))` -> i^th training example. `i` is the Index. not exp.
+    * `h` -> Hypothesis
+* Training Set -> Learning Algorithm -> `h`
+* Size of house -> `h` -> Estimated price
+* `h` maps from `x`'s to `y`'s 
 
