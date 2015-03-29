@@ -24,5 +24,28 @@
 * Supervised learning 
     * Knows right answers.
     * Algorithm produces more right answers.
+    * Regression problem. Predict continues valued output.
+        * Sample: How many items will sell in next 3 months ?
+        * Housing price prediction
+    * Classification problem. 
+        * Sample: Is user account hacked ?
+        * Breast cancer ["malignant", "benign"]
+            * Features:
+                * Age, Tumor size, Clump thickness, Uniformity of cell size,...
+        * If it is infinite number of features -> Support vector machines.
 * Unsupervised Learning
+    * Clusturing:
+        * Usage:
+            * Social network analyzation.
+            * Organize computer clusters.
+            * Market segmentation.
+            * Astronomical data analysis.
+            * Given a set of news articles, group them into set of articles.
+            * Given a set of customer data, automatically discover market segments and group customers into different market segments.
+        * Cocktail party problem:
+            * People talking all the time.
+            * Two microphones are put at different location.
+            * Give it to Cocktail party algorithm.
+            * Seperate the audios.
+
 
