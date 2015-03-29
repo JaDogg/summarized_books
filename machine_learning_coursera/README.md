@@ -61,4 +61,4 @@
 * Training Set -> Learning Algorithm -> `h`
 * Size of house -> `h` -> Estimated price
 * `h` maps from `x`'s to `y`'s 
-
+* `h(_theta)(x) = (theta)_0 + (theta)_0x`
