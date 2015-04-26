@@ -56,7 +56,7 @@
     * `x`'s -> **Input** variable/**Features**
     * `y`'s -> **Output** variable/**Target** variable
     * `(x,y)` -> One training example
-    * `(x^(i), x^(i))` -> i^th training example. `i` is the Index. not exp.
+    * `(x^(i), y^(i))` -> i^th training example. `i` is the Index. not exp.
     * `h` -> Hypothesis
 * Training Set -> Learning Algorithm -> `h`
 * Size of house -> `h` -> Estimated price
