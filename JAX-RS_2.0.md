@@ -34,3 +34,30 @@
 * Manage project dependencies
 * Cargo plug-in -> Handle deployment
 * `mvn clean package cargo:run`
+
+# Bookshop REST Service
+```
+POST   /books               - Create a book from HTTP Payload
+POST   /books/:isbn         - Create a book with given ISBN + HTTP Payload
+GET    /books               - Read all the books
+GET    /books/:isbn         - Only the book with given ISBN is returned
+PUT    /books/:isbn         - Update
+DELETE /books/:isbn         - Delete
+GET    /books/:isbn/authors - Get authors for given book
+GET    /authors             - Get all authors
+```
+
+# URLs
+```
+localhost:8081/rest-server/api/books
+--------------
+    Domain
+	         -----------
+	         Context Root
+	                      ----
+	                     Base URL
+	                           --------
+	                           Resource  
+	  
+```
+
